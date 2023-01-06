@@ -20,6 +20,11 @@
 
   svg.closeIcon {
     margin-left: 1rem;
+    transition: filter 0.2s;
+  }
+
+  svg.closeIcon:hover {
+    filter: brightness(1.5);
   }
 
   svg:first-child {
