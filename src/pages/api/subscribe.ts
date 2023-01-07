@@ -1,6 +1,6 @@
 import {NextApiRequest, NextApiResponse} from "next";
 import {stripe} from "../../services/stripe";
-import {getSession} from "next-auth/react";
+import {getSession} from "next-auth/client";
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
     if (req.method === 'POST') {
@@ -11,22 +11,27 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
             // metadata
         });
 
-        const checkoutSession = await stripe.checkout.sessions.create({
-            customer: stripeCustomer.id,
-            payment_method_types: ['card'],
-            billing_address_collection: 'required',
-            line_items: [
-                {
-                    price: 'price_1MMlSdCwIvAKwdKYDAaGZpLz',
-                    quantity: 1
-                }
-            ],
-            mode: 'subscription',
-            allow_promotion_codes: true,
-            success_url: process.env.STRIPE_SUCCESS_URL,
-            cancel_url: process.env.STRIPE_CANCEL_URL
-        })
-        return res.status(200).json({sessionId: checkoutSession.id})
+        try {
+            const stripeCheckoutSession = await stripe.checkout.sessions.create({
+                customer: stripeCustomer.id,
+                mode: 'subscription',
+                payment_method_types: ['card'],
+                billing_address_collection: 'required',
+                line_items: [
+                    {
+                        price: 'price_1MMlSdCwIvAKwdKYDAaGZpLz',
+                        quantity: 1
+                    }
+                ],
+                allow_promotion_codes: true,
+                success_url: process.env.STRIPE_SUCCESS_URL,
+                cancel_url: process.env.STRIPE_CANCEL_URL
+            });
+
+            return res.status(200).json({sessionId: stripeCheckoutSession.id});
+        } catch (e) {
+            return res.status(400).json({error: {message: e.message}});
+        }
     } else {
         res.setHeader('Allow', 'POST');
         res.status(405).end('Method not allowed');
