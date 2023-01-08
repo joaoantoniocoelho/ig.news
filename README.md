@@ -22,7 +22,8 @@ Stack:
 ```
 
 ## Screenshots
-<img src="/screenshots/home-page.png" alt="app screenshot">
-<img src="/screenshots/posts-page.png" alt="app screenshot">
-<img src="/screenshots/preview-page.png" alt="app screenshot">
-<img src="/screenshots/post-page.png" alt="app screenshot">
+<div display="flex">
+  <img src="/screenshots/home-page.png" alt="app screenshot" width = "500px">
+  <img src="/screenshots/posts-page.png" alt="app screenshot" width = "500px">
+  <img src="/screenshots/post-page.png" alt="app screenshot" width = "500px">
+</div>
