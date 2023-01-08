@@ -1,6 +1,9 @@
 # ig.news
 Blog with posts about React.js. To read the posts, the user needs to be logged in and have an active subscription.
-> <a href="https://rocketseat.com.br/"> RocketSeat's </a> React Course Chapter II.
+
+The app authentication was made with [Next-Auth.js](https://next-auth.js.org/) and user can login via Github.
+
+> <a href="https://rocketseat.com.br/"> RocketSeat's </a> React Course Chapter III.
 
 Stack:
 - [Next.js](https://nextjs.org/)
@@ -13,9 +16,9 @@ Stack:
 ```
   > Clone this repository
   
-  > npm install
+  > yarn install
   
-  > npm start
+  > yarn dev
 ```
 
 ## Screenshots
