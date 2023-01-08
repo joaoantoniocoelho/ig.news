@@ -22,5 +22,7 @@ Stack:
 ```
 
 ## Screenshots
-<img src="/screenshots/example-main.png" alt="app screenshot">
-<img src="/screenshots/example-modal.png" alt="app screenshot">
+<img src="/screenshots/home-page.png" alt="app screenshot">
+<img src="/screenshots/posts-page.png" alt="app screenshot">
+<img src="/screenshots/preview-page.png" alt="app screenshot">
+<img src="/screenshots/post-page.png" alt="app screenshot">
