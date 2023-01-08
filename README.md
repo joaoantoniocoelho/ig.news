@@ -22,6 +22,8 @@ Stack:
 ```
 
 ## Screenshots
+<h1 align="center">
   <img src="/screenshots/home-page.png" alt="app screenshot" width = "500px">
   <img src="/screenshots/posts-page.png" alt="app screenshot" width = "500px">
   <img src="/screenshots/post-page.png" alt="app screenshot" width = "500px">
+</h1>
