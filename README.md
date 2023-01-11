@@ -1,4 +1,5 @@
-# ig.news
+# IG.News
+
 Blog with posts about React.js. To read the posts, the user needs to be logged in and have an active subscription.
 
 The app authentication was made with [Next-Auth.js](https://next-auth.js.org/) and user can login via Github.
@@ -11,17 +12,17 @@ Stack:
 - [Stripe](https://stripe.com/)
 - [FaunaDB](https://fauna.com/)
 
-  
-🚀 To run, you need to:
+## 🚀 Installation
+
+1. First, you need to clone the repository
+2. Inside the project folder, run the commands bellow:
+
 ```
-  > Clone this repository
-  
-  > yarn install
-  
-  > yarn dev
+npm install
+npm start
 ```
 
-## Screenshots
-  <img src="/screenshots/home-page.png" alt="app screenshot">
-  <img src="/screenshots/posts-page.png" alt="app screenshot">
-  <img src="/screenshots/post-page.png" alt="app screenshot">
+## Screenshot
+<img src="/screenshots/home-page.png" alt="app screenshot" width="750">
+
+> You can see more screnshots on [screenshots](https://github.com/joaoantoniocoelho/ig.news/tree/master/screenshots) 
