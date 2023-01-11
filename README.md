@@ -1,6 +1,9 @@
 # IG.News
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /><img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" /><img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
 
-Blog with posts about React.js. To read the posts, the user needs to be logged in and have an active subscription.
+Blog with posts about React.js. The contents are made with [Prismic CMS](https://prismic.io/).
+
+To read the posts, the user needs to be logged in and have an active subscription.
 
 The app authentication was made with [Next-Auth.js](https://next-auth.js.org/) and user can login via Github.
 
