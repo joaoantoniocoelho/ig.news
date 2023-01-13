@@ -26,6 +26,8 @@ npm start
 ```
 
 ## Screenshot
-<img src="/screenshots/home-page.png" alt="app screenshot" width="750">
+<p align="center">
+  <img src="/screenshots/home-page.png" alt="app screenshot" width="750">
+</p>
 
 > You can see more screnshots on [screenshots](https://github.com/joaoantoniocoelho/ig.news/tree/master/screenshots) 
